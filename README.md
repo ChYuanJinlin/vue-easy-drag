@@ -1,7 +1,7 @@
 # vue-easy-drag
 vue3简单的拖动
 
-DirectiveBinding <<{ isMove: boolean, target: string }> >指令参数
+DirectiveBinding <{ isMove?: boolean, target?: string }> 指令参数
 
 | 属性   | 描述                                             | 默认值         |
 | ------ | ------------------------------------------------ | -------------- |

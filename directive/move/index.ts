@@ -4,7 +4,7 @@ const elements: elementsType[] = []
 export default {
     install(app: App<Element>, options: { name: string }) {
         app.directive(options?.name || 'move', {
-            mounted(el: HTMLElement, obj: DirectiveBinding<{ isMove: boolean, target: string }>) {
+            mounted(el: HTMLElement, obj: DirectiveBinding<{ isMove?: boolean, target?: string }>) {
                 if (obj?.value?.isMove == false) {
                     return
                 }
